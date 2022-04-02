@@ -1,0 +1,77 @@
+name: deploy
+on:
+  push:
+    branches: [ dev ]
+  workflow_dispatch:
+env:
+  TZ: Asia/Shanghai
+
+jobs:
+  deploy:
+    name: deploy 🚀
+    runs-on: ubuntu-latest
+    strategy:
+      matrix:
+        node-version: [ 16.13.2 ]
+    steps:
+      - name: Checkout 🚀
+        uses: actions/checkout@v2
+      - name: Use Node.js ${{ matrix.node-version }} 🚀
+        uses: actions/setup-node@v2
+      - name: Cache pnpm modules  🚀
+        uses: actions/cache@v2
+        env:
+          cache-name: cache-pnpm-modules
+        with:
+          path: ~/.pnpm-store
+          key: ${{ runner.os }}-build-${{ env.cache-name }}-${{ matrix.node-version }}-${{ hashFiles('**/pnpm-lock.yaml') }}
+          restore-keys: |
+            ${{ runner.os }}-build-${{ env.cache-name }}-${{ matrix.node-version }}-
+      - name: Use Pnpm 🚀
+        uses: pnpm/action-setup@v2.0.1
+        with:
+          version: 6.3.0
+          run_install: false
+      - name: Pnpm script 🚀
+        run: |
+          pnpm config set registry https://registry.npmmirror.com
+          pnpm install
+          pnpm build &> /dev/null
+      - name: Upload  dashboard 🚀
+        uses: actions/upload-artifact@v2
+        with:
+          name: dashboard
+          path: dist
+      - name: Deploy to github gh-pages 🚀
+        uses: JamesIves/github-pages-deploy-action@releases/v3
+        with:
+          GITHUB_TOKEN: ${{ secrets.GIT_TOKEN }}
+          BRANCH: gh-pages
+          FOLDER: dist
+      - name: Deploy to surge 🚀
+        uses: dswistowski/surge-sh-action@v1
+        with:
+          domain: 'konva.surge.sh'
+          project: './dist'
+          login: ${{ secrets.surge_login }}
+          token: ${{ secrets.surge_token }}
+      - name: Upload surge service and generate preview URL 🚀
+        id: deploy
+        run: |
+          export GITHUB_SHA=${{ github.sha }}
+          export GITHUB_SHA_SUB=${GITHUB_SHA: 0: 7 }
+          export DEPLOY_DOMAIN=https://konva-editor-$GITHUB_SHA_SUB.surge.sh
+          npx surge --project ./dist --domain $DEPLOY_DOMAIN --token ${{ secrets.surge_token }}
+          echo the preview URL is $DEPLOY_DOMAIN
+          echo "::set-output name=url::$DEPLOY_DOMAIN"
+      - name: Upload  🚀
+        uses: actions/upload-artifact@v2
+        with:
+          name: konva-editor
+          path: dist
+      - name: lighthouse 🚀
+        uses: treosh/lighthouse-ci-action@v2
+        with:
+          runs: 5
+          uploadArtifacts: true
+          configPath: './.github/workflows/setup/lighthouse-audit.json'

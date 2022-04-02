@@ -1,0 +1,230 @@
+{
+  "attrs": {
+    "width": 1200,
+    "height": 700,
+    "scaleX": 1,
+    "scaleY": 1
+  },
+  "className": "Stage",
+  "children": [
+    {
+      "attrs": {},
+      "className": "Layer",
+      "children": [
+        {
+          "attrs": {
+            "id": "bg",
+            "type": "color",
+            "fill": "#F5EDDF",
+            "width": 1200,
+            "height": 700
+          },
+          "className": "Rect"
+        },
+
+        {
+          "attrs": {
+            "width": 162.8722198534792,
+            "height": 123.15416489010939,
+            "name": "node",
+            "draggable": true,
+            "id": "1",
+            "type": "image",
+            "x": 142.42857142857156,
+            "y": 357.7714218418357,
+            "isSelected": false,
+            "url": "/image2/1.jpg"
+          },
+          "className": "Image"
+        },
+        {
+          "attrs": {
+            "width": 193.94019696803468,
+            "height": 146.45514772602604,
+            "name": "node",
+            "draggable": true,
+            "id": "2",
+            "type": "image",
+            "x": 142.42857142857156,
+            "y": 81.90962940621816,
+            "isSelected": false,
+            "url": "/image2/14.jpeg"
+          },
+          "className": "Image"
+        },
+        {
+          "attrs": {
+            "width": 193.94019696803468,
+            "height": 146.45514772602604,
+            "name": "node",
+            "draggable": true,
+            "id": "3",
+            "type": "image",
+            "x": 340,
+            "y": 283.7714218418357,
+            "isSelected": false,
+            "url": "/image2/14.jpeg"
+          },
+          "className": "Image"
+        },
+        {
+          "attrs": {
+            "id": "28cae940-8bad-4e81-a2a6-39c5ecf6bdb6",
+            "fontSize": 60,
+            "type": "text-input",
+            "text": "雷洛",
+            "fill": "#000",
+            "x": 716,
+            "y": 422,
+            "name": "node",
+            "draggable": true
+          },
+          "className": "Text"
+        },
+        {
+          "attrs": {
+            "id": "96db3ac3-ca93-4f5b-9933-724e325bf488",
+            "fontSize": 60,
+            "type": "text-input",
+            "text": "游园惊梦",
+            "fill": "pink",
+            "x": 716,
+            "y": 182,
+            "name": "node",
+            "draggable": true
+          },
+          "className": "Text"
+        },
+        {
+          "attrs": {
+            "id": "41df1812-73d3-4ded-8522-50b4c7ecccf5",
+            "fontSize": 60,
+            "type": "text-input",
+            "text": "凤凰于飞",
+            "fill": "#000",
+            "x": 716,
+            "y": 522,
+            "name": "node",
+            "draggable": true
+          },
+          "className": "Text"
+        },
+        {
+          "attrs": {
+            "id": "dd1a588f-9ad0-4850-b045-1d7f0fcddf9f",
+            "fontSize": 60,
+            "type": "text-input",
+            "text": "守护之力",
+            "fill": "green",
+            "x": 316,
+            "y": 522,
+            "name": "node",
+            "draggable": true
+          },
+          "className": "Text"
+        },
+        {
+          "attrs": {
+            "id": "ae4320d8-21b4-4bf4-b55f-0e9deb72e593",
+            "fontSize": 60,
+            "type": "text-input",
+            "text": "仲夏夜之梦",
+            "fill": "#000",
+            "x": 16,
+            "y": 252,
+            "name": "node",
+            "draggable": true
+          },
+          "className": "Text"
+        },
+        {
+          "attrs": {
+            "id": "8d4fe99b-2abe-44dc-9dca-d2601012b6b3",
+            "fontSize": 60,
+            "type": "text-input",
+            "text": "天鹅之梦",
+            "fill": "#000",
+            "x": 116,
+            "y": 322,
+            "name": "node",
+            "draggable": true
+          },
+          "className": "Text"
+        },
+        {
+          "attrs": {
+            "id": "27aa76bb-5125-4c73-91cb-16681e778533",
+            "fontSize": 60,
+            "type": "text-input",
+            "text": "来曲开场舞，至死方休",
+            "fill": "#000",
+            "x": 16,
+            "y": 192,
+            "name": "node",
+            "draggable": true
+          },
+          "className": "Text"
+        },
+        {
+          "attrs": {
+            "id": "d01edc25-0829-4301-9199-5f599e75f3c1",
+            "fontSize": 60,
+            "type": "text-input",
+            "text": "时间带不走美妙的青春，它被珍藏于仲夏夜的诗篇",
+            "fill": "#000",
+            "x": 16,
+            "y": 12,
+            "name": "node",
+            "draggable": true
+          },
+          "className": "Text"
+        },
+        {
+          "attrs": {
+            "fill": "rgba(0,0,255,0.5)",
+            "visible": false,
+            "width": 2,
+            "height": 24,
+            "x": 586,
+            "y": 365
+          },
+          "className": "Rect"
+        },
+        {
+          "attrs": {
+            "x": 716,
+            "y": 129.77237968040913
+          },
+          "className": "Transformer"
+        },
+        {
+          "attrs": {
+            "id": "bda7f34c-ccee-4a44-8d1e-5e37591842b6",
+            "fontSize": 60,
+            "type": "text-input",
+            "text": "若轻云之蔽日，若流风之回雪",
+            "fill": "#000",
+            "y": 109.77237968040914,
+            "name": "node",
+            "draggable": true
+          },
+          "className": "Text"
+        },
+        {
+          "attrs": {
+            "id": "cb2028d7-00c4-4e9f-9cb1-ace5d34a5964",
+            "fontSize": 60,
+            "type": "text-input",
+            "text": "若轻云之蔽日，若流风之回雪",
+            "fill": "#000",
+            "x": 616,
+            "y": 357.7714218418357,
+            "name": "node",
+            "draggable": true
+          },
+          "className": "Text"
+        }
+      ]
+    }
+  ]
+}
