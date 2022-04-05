@@ -1,6 +1,6 @@
 import Vue from 'vue'
 import App from './App.vue'
-import { Button,Layout,Menu ,Breadcrumb,Icon} from 'ant-design-vue';
+import { Button,Layout,Menu ,Breadcrumb,Icon,message} from 'ant-design-vue';
 Vue.config.productionTip = false
 Vue.component(Icon.name, Icon);
 Vue.component(Menu.name, Menu);
@@ -13,6 +13,7 @@ Vue.component(Layout.Header.name, Layout.Header);
 Vue.component(Layout.Content.name, Layout.Content);
 Vue.component(Layout.Footer.name, Layout.Footer);
 Vue.component(Layout.Sider.name, Layout.Sider);
+Vue.prototype.$message = message;
 new Vue({
   render: h => h(App),
 }).$mount('#app')

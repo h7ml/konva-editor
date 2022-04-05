@@ -8,7 +8,8 @@
     "serve": "vue-cli-service serve",
     "build": "vue-cli-service build",
     "lint": "vue-cli-service lint",
-    "packages": "vue-cli-service build --target lib --name konva-editor --dest lib packages/index.js"
+    "packages": "vue-cli-service build --target lib --name konva-editor --dest lib packages/index.js",
+    "prepare": "husky install"
   },
   "bugs": {
     "url": "https://github.com/h7ml/konva-editor/issues"
@@ -23,6 +24,7 @@
     "core-js": "^3.8.3",
     "konva": "^8.3.5",
     "vue": "^2.6.14",
+    "vue-monaco-editor": "^0.0.19",
     "vuex": "v2"
   },
   "devDependencies": {
