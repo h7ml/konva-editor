@@ -1,14 +1,20 @@
 <template>
   <div class="container-container">
-    <div class="container"> -- container -- </div>
+    <div class="container">
+      <components/>
+    </div>
   </div>
 </template>
 
 <script>
+import components from "./components/index";
+
 export default {
   // eslint-disable-next-line vue/multi-word-component-names
   name: "Container",
-  components: {},
+  components: {
+    components
+  },
   props: {},
   data() {
     return {};

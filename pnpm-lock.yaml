@@ -19,6 +19,7 @@ specifiers:
   sass: ^1.49.11
   sass-loader: ^12.6.0
   vue: ^2.6.14
+  vue-konva: '2'
   vue-monaco-editor: ^0.0.19
   vue-template-compiler: ^2.6.14
   vuex: v2
@@ -28,6 +29,7 @@ dependencies:
   core-js: mirrors.tencent.com/core-js/3.21.1
   konva: 8.3.5
   vue: mirrors.tencent.com/vue/2.6.14
+  vue-konva: 2.1.7_konva@8.3.5
   vue-monaco-editor: 0.0.19
   vuex: mirrors.tencent.com/vuex/2.5.0
 
@@ -2094,7 +2096,7 @@ packages:
       source-map: mirrors.tencent.com/source-map/0.6.1
       vue-template-es2015-compiler: mirrors.tencent.com/vue-template-es2015-compiler/1.9.1
     optionalDependencies:
-      prettier: 2.6.1
+      prettier: mirrors.tencent.com/prettier/2.6.1
     dev: true
 
   /@vue/web-component-wrapper/1.3.0:
@@ -2219,10 +2221,6 @@ packages:
     resolution: {integrity: sha1-3DQxT05nkxgJP8dgJyUl+UvyXBY=}
     dev: true
 
-  /big.js/5.2.2:
-    resolution: {integrity: sha512-vyL2OymJxmarO8gxMr0mhChsO9QGwhynfuu4+MHTAW6czfq9humCB7rKpUjDd9YUiDPU4mzpyupFSvOClAwbmQ==}
-    dev: true
-
   /commitizen/4.2.4:
     resolution: {integrity: sha512-LlZChbDzg3Ir3O2S7jSo/cgWp5/QwylQVr59K4xayVq8S4/RdKzSyJkghAiZZHfhh5t4pxunUoyeg0ml1q/7aw==}
     engines: {node: '>= 10'}
@@ -2306,11 +2304,6 @@ packages:
     engines: {node: '>=6.0.0'}
     dev: true
 
-  /emojis-list/3.0.0:
-    resolution: {integrity: sha512-/kyM18EfinwXZbno9FyUGeFh87KC8HRQBQGildHZbEuRyWFOmv1U10o9BBp8XVZDVNNuQKyIGIu5ZYAAXJ0V2Q==}
-    engines: {node: '>= 4'}
-    dev: true
-
   /event-pubsub/4.3.0:
     resolution: {integrity: sha512-z7IyloorXvKbFx9Bpie2+vMJKKx1fH1EN5yiTfp8CiLOTptSYy1g8H4yDpGlEdshL1PBiFtBHepF2cNsqeEeFQ==}
     engines: {node: '>=4.0.0'}
@@ -2322,14 +2315,6 @@ packages:
       findup-sync: mirrors.tencent.com/findup-sync/4.0.0
       merge: mirrors.tencent.com/merge/2.1.1
     dev: true
-
-  /fsevents/2.3.2:
-    resolution: {integrity: sha512-xiqMQR4xAeHTuB9uWm+fFRcIOgKBMiOBP+eXiyT7jsgVCq1bkVygt00oASowB7EdtpOHaaPgKt812P9ab+DDKA==}
-    engines: {node: ^8.16.0 || ^10.6.0 || >=11.0.0}
-    os: [darwin]
-    requiresBuild: true
-    dev: true
-    optional: true
 
   /graceful-fs/4.2.9:
     resolution: {integrity: sha512-NtNxqUcXgpW2iMrfqSfR73Glt39K+BLwWsPs94yR63v45T0Wbej7eRmL5cWfwEgqXnmjQp3zaJTshdRW/qC2ZQ==}
@@ -2350,19 +2335,6 @@ packages:
     engines: {node: '>=0.6.0'}
     dev: true
 
-  /json5/1.0.1:
-    resolution: {integrity: sha512-aKS4WQjPenRxiQsC93MNfjx+nbF4PAdYzmd/1JIj8HYzqfbu86beTuNgXDzPknWk0n0uARlyewZo4s++ES36Ow==}
-    hasBin: true
-    dependencies:
-      minimist: 1.2.6
-    dev: true
-
-  /json5/2.2.1:
-    resolution: {integrity: sha512-1hqLFMSrGHRHxav9q9gNjJ5EXznIxGVO09xQRrwplcS8qs28pZ8s8hupZAmqDwZUmVZ2Qb2jnyPOWcDH8m8dlA==}
-    engines: {node: '>=6'}
-    hasBin: true
-    dev: true
-
   /konva/8.3.5:
     resolution: {integrity: sha512-RjaZN8PwZN3n/AlqLmtPNozLRXd6pPo11UawTJpvuOAKEkSQSXI1EHntDRIPnrrJ/j4gU0VmPzWs7/ZgLZnAPQ==}
     dev: false
@@ -2373,32 +2345,11 @@ packages:
       launch-editor: mirrors.tencent.com/launch-editor/2.3.0
     dev: true
 
-  /loader-utils/1.4.0:
-    resolution: {integrity: sha512-qH0WSMBtn/oHuwjy/NucEgbx5dbxxnxup9s4PVXJUDHZBQY+s0NWA9rJf53RBnQZxfch7euUui7hpoAPvALZdA==}
-    engines: {node: '>=4.0.0'}
-    dependencies:
-      big.js: 5.2.2
-      emojis-list: 3.0.0
-      json5: 1.0.1
-    dev: true
-
   /lodash.debounce/4.0.8:
     resolution: {integrity: sha1-gteb/zCmfEAF/9XiUVMArZyk168=}
 
   /lodash/4.17.21:
     resolution: {integrity: sha512-v2kDEe57lecTulaDIuNTPy3Ry4gLGJ6Z1O3vE1krgXZNrsQ+LFTGHVxVjcXPs17LhbZVGedAJv8XZ1tvj5FvSg==}
-
-  /minimist/1.2.6:
-    resolution: {integrity: sha512-Jsjnk4bw3YJqYzbdyBiNsPWHPfO++UGG749Cxs6peCu5Xg4nrena6OVxOYxrQTqww0Jmwt+Ref8rggumkTLz9Q==}
-    dev: true
-
-  /prettier/2.6.1:
-    resolution: {integrity: sha512-8UVbTBYGwN37Bs9LERmxCPjdvPxlEowx2urIL6urHzdb3SDq4B/Z6xLFCblrSnE4iKWcS6ziJ3aOYrc1kz/E2A==}
-    engines: {node: '>=10.13.0'}
-    hasBin: true
-    requiresBuild: true
-    dev: true
-    optional: true
 
   /progress-webpack-plugin/1.0.15_webpack@5.71.0:
     resolution: {integrity: sha512-zitL4WsP4BGQ3loe/Ra2hJ8icQu0Nqkr3QSRCffm0igh28qm8ijwXCtskcNRPolwNxjHI5tde6xKg4UdrShHSQ==}
@@ -2423,6 +2374,15 @@ packages:
     resolution: {integrity: sha512-BXq3jwIagosjgNVae6tkHzzIk6a8MHFtzAdwhnV5VlvPTFxDCvIttgSiHWjdGoTJvXtmRu5HacExfdarRcFhog==}
     dev: true
 
+  /vue-konva/2.1.7_konva@8.3.5:
+    resolution: {integrity: sha512-uKFp1/tGbt9HAcTXukk/PuPtCMfCSmNyU3Feo3Av4XVfcoBgVQA69+H9r2VQMX+Vwphez1qSfGf7ZNstM3nYRw==}
+    engines: {node: '>= 4.0.0', npm: '>= 3.0.0'}
+    peerDependencies:
+      konva: '>3.2.5'
+    dependencies:
+      konva: 8.3.5
+    dev: false
+
   /vue-loader/15.9.8_c31202a7d641d29147beedb48916bf08:
     resolution: {integrity: sha512-GwSkxPrihfLR69/dSV3+5CdMQ0D+jXg8Ma1S4nQXKJAznYFX14vHdc/NetQc34Dw+rBbIJyP7JOuVb9Fhprvog==}
     peerDependencies:
@@ -2439,7 +2399,7 @@ packages:
       '@vue/component-compiler-utils': 3.3.0
       css-loader: mirrors.tencent.com/css-loader/6.7.1_webpack@5.71.0
       hash-sum: 1.0.2
-      loader-utils: 1.4.0
+      loader-utils: mirrors.tencent.com/loader-utils/1.4.0
       vue-hot-reload-api: 2.3.4
       vue-style-loader: 4.1.3
       vue-template-compiler: mirrors.tencent.com/vue-template-compiler/2.6.14
@@ -2457,7 +2417,7 @@ packages:
     resolution: {integrity: sha512-sFuh0xfbtpRlKfm39ss/ikqs9AbKCoXZBpHeVZ8Tx650o0k0q/YCM7FRvigtxpACezfq6af+a7JeqVTWvncqDg==}
     dependencies:
       hash-sum: 1.0.2
-      loader-utils: 1.4.0
+      loader-utils: mirrors.tencent.com/loader-utils/1.4.0
     dev: true
 
   /vue/2.6.14:
@@ -2961,6 +2921,12 @@ packages:
     version: 1.5.1
     dev: true
 
+  mirrors.tencent.com/big.js/5.2.2:
+    resolution: {integrity: sha512-vyL2OymJxmarO8gxMr0mhChsO9QGwhynfuu4+MHTAW6czfq9humCB7rKpUjDd9YUiDPU4mzpyupFSvOClAwbmQ==, registry: https://mirrors.cloud.tencent.com/npm/, tarball: https://mirrors.tencent.com/npm/big.js/-/big.js-5.2.2.tgz}
+    name: big.js
+    version: 5.2.2
+    dev: true
+
   mirrors.tencent.com/binary-extensions/2.2.0:
     resolution: {integrity: sha512-jDctJ/IVQbZoJykoeHbhXpOlNBqGNcwXJKJog42E5HDPUwQTSdjCHdihjj0DlnheQ7blbT6dHOafNAiS8ooQKA==, registry: https://mirrors.cloud.tencent.com/npm/, tarball: http://mirrors.tencent.com/npm/binary-extensions/-/binary-extensions-2.2.0.tgz}
     name: binary-extensions
@@ -3227,7 +3193,7 @@ packages:
       normalize-path: mirrors.tencent.com/normalize-path/3.0.0
       readdirp: mirrors.tencent.com/readdirp/3.6.0
     optionalDependencies:
-      fsevents: 2.3.2
+      fsevents: mirrors.tencent.com/fsevents/2.3.2
     dev: true
 
   mirrors.tencent.com/chrome-trace-event/1.0.3:
@@ -3968,7 +3934,7 @@ packages:
     engines: {node: '>=10'}
     dependencies:
       globby: mirrors.tencent.com/globby/11.1.0
-      graceful-fs: 4.2.9
+      graceful-fs: mirrors.tencent.com/graceful-fs/4.2.9
       is-glob: mirrors.tencent.com/is-glob/4.0.3
       is-path-cwd: mirrors.tencent.com/is-path-cwd/2.2.0
       is-path-inside: mirrors.tencent.com/is-path-inside/3.0.3
@@ -4186,6 +4152,13 @@ packages:
     resolution: {integrity: sha512-MSjYzcWNOA0ewAHpz0MxpYFvwg6yjy1NG3xteoqz644VCo/RPgnr1/GGt+ic3iJTzQ8Eu3TdM14SawnVUmGE6A==, registry: https://mirrors.cloud.tencent.com/npm/, tarball: https://mirrors.tencent.com/npm/emoji-regex/-/emoji-regex-8.0.0.tgz}
     name: emoji-regex
     version: 8.0.0
+    dev: true
+
+  mirrors.tencent.com/emojis-list/3.0.0:
+    resolution: {integrity: sha512-/kyM18EfinwXZbno9FyUGeFh87KC8HRQBQGildHZbEuRyWFOmv1U10o9BBp8XVZDVNNuQKyIGIu5ZYAAXJ0V2Q==, registry: https://mirrors.cloud.tencent.com/npm/, tarball: https://mirrors.tencent.com/npm/emojis-list/-/emojis-list-3.0.0.tgz}
+    name: emojis-list
+    version: 3.0.0
+    engines: {node: '>= 4'}
     dev: true
 
   mirrors.tencent.com/encodeurl/1.0.2:
@@ -4863,6 +4836,16 @@ packages:
     name: fs.realpath
     version: 1.0.0
     dev: true
+
+  mirrors.tencent.com/fsevents/2.3.2:
+    resolution: {integrity: sha512-xiqMQR4xAeHTuB9uWm+fFRcIOgKBMiOBP+eXiyT7jsgVCq1bkVygt00oASowB7EdtpOHaaPgKt812P9ab+DDKA==, registry: https://mirrors.cloud.tencent.com/npm/, tarball: https://mirrors.tencent.com/npm/fsevents/-/fsevents-2.3.2.tgz}
+    name: fsevents
+    version: 2.3.2
+    engines: {node: ^8.16.0 || ^10.6.0 || >=11.0.0}
+    os: [darwin]
+    requiresBuild: true
+    dev: true
+    optional: true
 
   mirrors.tencent.com/function-bind/1.1.1:
     resolution: {integrity: sha512-yIovAzMX49sF8Yl58fSCWJ5svSLuaibPxXQJFLmBObTuCr0Mf1KiPopGM9NiFjiYBCbfaa2Fh6breQ6ANVTI0A==, registry: https://mirrors.cloud.tencent.com/npm/, tarball: https://mirrors.tencent.com/npm/function-bind/-/function-bind-1.1.1.tgz}
@@ -5818,6 +5801,15 @@ packages:
       string-convert: mirrors.tencent.com/string-convert/0.2.1
     dev: false
 
+  mirrors.tencent.com/json5/1.0.1:
+    resolution: {integrity: sha512-aKS4WQjPenRxiQsC93MNfjx+nbF4PAdYzmd/1JIj8HYzqfbu86beTuNgXDzPknWk0n0uARlyewZo4s++ES36Ow==, registry: https://mirrors.cloud.tencent.com/npm/, tarball: https://mirrors.tencent.com/npm/json5/-/json5-1.0.1.tgz}
+    name: json5
+    version: 1.0.1
+    hasBin: true
+    dependencies:
+      minimist: mirrors.tencent.com/minimist/1.2.6
+    dev: true
+
   mirrors.tencent.com/json5/2.2.1:
     resolution: {integrity: sha512-1hqLFMSrGHRHxav9q9gNjJ5EXznIxGVO09xQRrwplcS8qs28pZ8s8hupZAmqDwZUmVZ2Qb2jnyPOWcDH8m8dlA==, registry: https://mirrors.cloud.tencent.com/npm/, tarball: https://mirrors.tencent.com/npm/json5/-/json5-2.2.1.tgz}
     name: json5
@@ -5831,7 +5823,7 @@ packages:
     name: jsonfile
     version: 4.0.0
     optionalDependencies:
-      graceful-fs: 4.2.9
+      graceful-fs: mirrors.tencent.com/graceful-fs/4.2.9
     dev: true
 
   mirrors.tencent.com/jsonfile/6.1.0:
@@ -5841,7 +5833,7 @@ packages:
     dependencies:
       universalify: mirrors.tencent.com/universalify/2.0.0
     optionalDependencies:
-      graceful-fs: 4.2.9
+      graceful-fs: mirrors.tencent.com/graceful-fs/4.2.9
     dev: true
 
   mirrors.tencent.com/jsonparse/1.3.1:
@@ -5905,14 +5897,14 @@ packages:
     dev: true
 
   mirrors.tencent.com/loader-utils/1.4.0:
-    resolution: {integrity: sha512-qH0WSMBtn/oHuwjy/NucEgbx5dbxxnxup9s4PVXJUDHZBQY+s0NWA9rJf53RBnQZxfch7euUui7hpoAPvALZdA==, registry: https://mirrors.cloud.tencent.com/npm/, tarball: http://mirrors.tencent.com/npm/loader-utils/-/loader-utils-1.4.0.tgz}
+    resolution: {integrity: sha512-qH0WSMBtn/oHuwjy/NucEgbx5dbxxnxup9s4PVXJUDHZBQY+s0NWA9rJf53RBnQZxfch7euUui7hpoAPvALZdA==, registry: https://mirrors.cloud.tencent.com/npm/, tarball: https://mirrors.tencent.com/npm/loader-utils/-/loader-utils-1.4.0.tgz}
     name: loader-utils
     version: 1.4.0
     engines: {node: '>=4.0.0'}
     dependencies:
-      big.js: 5.2.2
-      emojis-list: 3.0.0
-      json5: 1.0.1
+      big.js: mirrors.tencent.com/big.js/5.2.2
+      emojis-list: mirrors.tencent.com/emojis-list/3.0.0
+      json5: mirrors.tencent.com/json5/1.0.1
     dev: true
 
   mirrors.tencent.com/loader-utils/2.0.2:
@@ -5921,9 +5913,9 @@ packages:
     version: 2.0.2
     engines: {node: '>=8.9.0'}
     dependencies:
-      big.js: 5.2.2
-      emojis-list: 3.0.0
-      json5: 2.2.1
+      big.js: mirrors.tencent.com/big.js/5.2.2
+      emojis-list: mirrors.tencent.com/emojis-list/3.0.0
+      json5: mirrors.tencent.com/json5/2.2.1
     dev: true
 
   mirrors.tencent.com/locate-path/5.0.0:
@@ -6290,7 +6282,7 @@ packages:
     version: 0.5.6
     hasBin: true
     dependencies:
-      minimist: 1.2.6
+      minimist: mirrors.tencent.com/minimist/1.2.6
     dev: true
 
   mirrors.tencent.com/module-alias/2.2.2:
@@ -7384,6 +7376,16 @@ packages:
     version: 1.2.1
     engines: {node: '>= 0.8.0'}
     dev: true
+
+  mirrors.tencent.com/prettier/2.6.1:
+    resolution: {integrity: sha512-8UVbTBYGwN37Bs9LERmxCPjdvPxlEowx2urIL6urHzdb3SDq4B/Z6xLFCblrSnE4iKWcS6ziJ3aOYrc1kz/E2A==, registry: https://mirrors.cloud.tencent.com/npm/, tarball: https://mirrors.tencent.com/npm/prettier/-/prettier-2.6.1.tgz}
+    name: prettier
+    version: 2.6.1
+    engines: {node: '>=10.13.0'}
+    hasBin: true
+    requiresBuild: true
+    dev: true
+    optional: true
 
   mirrors.tencent.com/pretty-error/4.0.0:
     resolution: {integrity: sha512-AoJ5YMAcXKYxKhuJGdcvse+Voc6v1RgnsR3nWcYU7q4t6z0Q6T86sv5Zq8VIRbOWWFpvdGE83LtdSMNd+6Y0xw==, registry: https://mirrors.cloud.tencent.com/npm/, tarball: https://mirrors.tencent.com/npm/pretty-error/-/pretty-error-4.0.0.tgz}

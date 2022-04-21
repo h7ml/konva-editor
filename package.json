@@ -24,6 +24,7 @@
     "core-js": "^3.8.3",
     "konva": "^8.3.5",
     "vue": "^2.6.14",
+    "vue-konva": "2",
     "vue-monaco-editor": "^0.0.19",
     "vuex": "v2"
   },

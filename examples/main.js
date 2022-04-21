@@ -1,5 +1,6 @@
 import Vue from 'vue'
 import App from './App.vue'
+import VueKonva from 'vue-konva';
 import { Button,Layout,Menu ,Breadcrumb,Icon,message} from 'ant-design-vue';
 Vue.config.productionTip = false
 Vue.component(Icon.name, Icon);
@@ -14,6 +15,8 @@ Vue.component(Layout.Content.name, Layout.Content);
 Vue.component(Layout.Footer.name, Layout.Footer);
 Vue.component(Layout.Sider.name, Layout.Sider);
 Vue.prototype.$message = message;
+Vue.use(VueKonva);
+
 new Vue({
   render: h => h(App),
 }).$mount('#app')
